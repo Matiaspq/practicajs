@@ -16,11 +16,16 @@
     <p id="resultado"></p>
 <script>
     function verificarEdad(){
-        var edadInput = document.getElementById("resultado");
+        var edadInput = document.getElementById("edad-input").value;
+        var edad = parseInt(edadInput);
+
+        var resultadoElement = document.getElementById("resultado");
         if (edad >=18){
-            resultadoElement.tex
+            resultadoElement.textContent = "Sos mayor de edad.";
+        } else{
+            resultadoElement.textContent = "Sos menor de edad.";
         }
-    }
+        }
 </script>
 </body>
 </html>
